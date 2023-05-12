@@ -1,6 +1,6 @@
 ﻿<?php  
 $usuario = "root";
-$contraseña = "9410Alvaro";
+$contraseña = "";
 const NOMBRE_BASE_DE_DATOS = "pointsale";
 try {
     $base_de_datos = new PDO('mysql:host=localhost;dbname=' . NOMBRE_BASE_DE_DATOS, $usuario, $contraseña);
