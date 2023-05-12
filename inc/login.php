@@ -1,5 +1,7 @@
+<link rel="stylesheet" href="./css/new.css">
+<div class="principal">
 <div class="col-md-4 col-md-offset-4 col-xs-12">
-    <h3 class="text-center">Bienvenido de nuevo <i class="fa fa-smile-o"></i></h3>
+    <h3 class="text-center">Bienvenido de nuevo</i></h3>
     <div class="col-md-12">
         <div class="form-group">
             <label for="usuario">Nombre de usuario</label>
@@ -17,6 +19,8 @@
         </button>
     </div>
 </div>
+</div>
+
 <script>
     $(document).ready(function () {
         $("#usuario").focus();

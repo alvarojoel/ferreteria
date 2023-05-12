@@ -204,7 +204,7 @@ function insertar_usuario(usuario, palabra_secreta, administrador) {
         palabra_secreta: palabra_secreta,
         es_administrador: administrador
     }, function (respuesta) {
-        respuesta = JSON.parse(respuesta);
+           respuesta = JSON.parse(respuesta);
         if (respuesta === true) {
             $("#mostrar_resultados").html("Correcto").parent().addClass('alert-success').show();
             $("input").val("");
@@ -213,7 +213,7 @@ function insertar_usuario(usuario, palabra_secreta, administrador) {
                 consultar_todos_los_usuarios();
             }, 1000)
         } else {
-            $("#mostrar_resultados").html("Error: " + respuesta).parent().addClass('alert-danger').show();
+             $("#mostrar_resultados").html("Error: " + respuesta).parent().addClass('alert-danger').show();
         }
     });
 }

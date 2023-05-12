@@ -81,8 +81,8 @@ function dibuja_tabla_caja(datos){
 		.append( 
 			$("<tr>")
 			.append(
-				$("<td>").html( (datos[i].caja_chica == 0 ) ? "No aplica" : "$" + datos[i].caja_chica ),
-				$("<td>").html( (datos[i].ventas == 0) ? "No aplica" : "$" + datos[i].ventas ),
+				$("<td>").html( (datos[i].caja_chica == 0 ) ? "No aplica" : "Q" + datos[i].caja_chica ),
+				$("<td>").html( (datos[i].ventas == 0) ? "No aplica" : "Q" + datos[i].ventas ),
 				$("<td>").html( (datos[i].gastos == 0) ? "No aplica" : datos[i].gastos ),
 				$("<td>").html(datos[i].fecha),
 				$("<td>").html( (datos[i].no_venta === "null") ? "No aplica" : datos[i].no_venta ),

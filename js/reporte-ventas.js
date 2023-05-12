@@ -306,8 +306,8 @@ function dibuja_tabla_ventas(ventas) {
                         $("<td>").html(ventas_totales[i].fecha),
                         $("<td>").html(ventas_totales[i].productos_como_html()),
                         $("<td>").html(ventas_totales[i].numero_productos),
-                        $("<td>").html("$" + ventas_totales[i].total),
-                        $("<td>").html("$" + ventas_totales[i].utilidad),
+                        $("<td>").html("Q" + ventas_totales[i].total),
+                        $("<td>").html("Q" + ventas_totales[i].utilidad),
                         $("<td>").html(ventas_totales[i].usuario)
                     )
             );

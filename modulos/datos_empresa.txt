@@ -1,7 +1,7 @@
-Nombre de la empresa
-123456789
-RFC DE LA EMPRESA
-DIRECCION DE LA EMPRESA
-COLONIA DE LA EMPRESA
-55555
-CIUDAD
+Ferreteria el Rey
+5454545
+no tiene
+Soloma
+fasf
+13008
+Soloma
