@@ -22,13 +22,35 @@ $(document).ready(function () {
     escuchar_elementos();
     $("li#elem_reportes").addClass("active");
     consultar_valor_del_inventario();
+    
+    
 });
+
 function consultar_valor_del_inventario() {
     $.post("./modulos/inventario/consultar_valor_del_inventario.php", function (data) {
+        
         var respuesta = JSON.parse(data);
-        if (respuesta !== "Restringido" && !isNaN(respuesta)) $("#total_dinero").text(respuesta).parent().show();
+        
+        if (respuesta !== "Restringido" && !isNaN(respuesta)) {
+            var valor_redondeado = parseFloat(respuesta).toFixed(2); // Redondear a dos decimales
+            $("#total_dinero").text(valor_redondeado).parent().show(); // Actualizar texto del elemento HTML
+        }
     });
 }
+
+//Funcion antigua
+/*
+
+function consultar_valor_del_inventario() {
+    $.post("./modulos/inventario/consultar_valor_del_inventario.php", function (data) {
+        
+        var respuesta = JSON.parse(data);
+        
+        if (respuesta !== "Restringido" && !isNaN(respuesta)) $("#total_dinero").text(respuesta).parent().show();
+       
+        
+    });
+}*/
 
 function escuchar_elementos() {
 
@@ -116,6 +138,7 @@ function dibuja_tabla(productos) {
         total_dinero = 0;
     for (var i = total_productos - 1; i >= 0; i--) {
         total_dinero += parseFloat(productos[i].precio_venta);
+        
         $("#contenedor_tabla tbody")
             .append(
                 $("<tr>")

@@ -25,7 +25,7 @@ function imprime_ticket($productos, $id_venta, $cambio)
     $datos_empresa = array(
         "nombre" => trim($datos_empresa_recuperados[0]),
         "telefono" => trim($datos_empresa_recuperados[1]),
-        "rfc" => trim($datos_empresa_recuperados[2]),
+        "id" => trim($datos_empresa_recuperados[2]),
         "direccion" => trim($datos_empresa_recuperados[3]),
         "colonia" => trim($datos_empresa_recuperados[4]),
         "cp" => trim($datos_empresa_recuperados[5]),

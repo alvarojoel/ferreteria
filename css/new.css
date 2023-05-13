@@ -1,7 +1,18 @@
 body {
     background-image: url("../img/background.jpg");
+    background-size:cover;
+    
   }
 
 .principal{
 margin-top: 12vw;
+}
+
+.textoBlanco{
+  color: white;
+}
+
+#textoTitulo{
+  color: white;
+  
 }

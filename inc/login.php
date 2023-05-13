@@ -1,16 +1,16 @@
 <link rel="stylesheet" href="./css/new.css">
 <div class="principal">
 <div class="col-md-4 col-md-offset-4 col-xs-12">
-    <h3 class="text-center">Bienvenido de nuevo</i></h3>
+    <h3 class="text-center" id="textoTitulo">Bienvenido de nuevo</i></h3>
     <div class="col-md-12">
         <div class="form-group">
-            <label for="usuario">Nombre de usuario</label>
+            <label class="textoBlanco" for="usuario">Nombre de usuario</label>
             <input placeholder="Nombre de usuario" type="text" id="usuario" class="form-control">
         </div>
     </div>
     <div class="col-md-12">
         <div class="form-group">
-            <label for="palabra_secreta">Contraseña</label>
+            <label class="textoBlanco" for="palabra_secreta">Contraseña</label>
             <input placeholder="Contraseña" type="password" id="palabra_secreta" class="form-control">
         </div>
     </div>

@@ -172,11 +172,11 @@ function dibuja_tabla_ventas_por_familia(ventas) {
                     '<td>' +
                     (a.familia === "" ? "--Sin familia--" : a.familia) +
                     '</td>' +
-                    '<td> $' +
+                    '<td> Q' +
                     a.total +
                     '</td>' +
                     '<td>' +
-                    '<strong>$' +
+                    '<strong>Q' +
                     a.utilidad +
                     '</strong>' +
                     '</td>' +
@@ -190,11 +190,11 @@ function dibuja_tabla_ventas_por_familia(ventas) {
             '<td>' +
             'Totales' +
             '</td>' +
-            '<td> $' +
+            '<td> Q' +
             total_por_familia +
             '</td>' +
             '<td>' +
-            '<strong>$' +
+            '<strong>Q' +
             utilidad_por_familia +
             '</strong>' +
             '</td>' +
